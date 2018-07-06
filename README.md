@@ -3,9 +3,9 @@
 Aplicación fue realizada con el framework Ruby on Rails
 
 ## Tecnologías usadas
-Ruby v2.3.1p112
-Ruby on Rails v5.2.0
-Postgresql v9.4
+- Ruby v2.3.1p112
+- Ruby on Rails v5.2.0
+- Postgresql v9.4
 
 ## Instalación
 
