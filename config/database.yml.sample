@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: proyecto_db
+  pool: 5
+  username: [USUARIO BASE DE DATOS]
+  password: [PASSWORD BASE DE DATOS]
+  host: localhost
+  port: 5432
