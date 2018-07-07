@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_07_06_235648) do
 
   create_table "agencias", force: :cascade do |t|
     t.string "nombre"
+    t.boolean "central"
     t.bigint "departamento_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
