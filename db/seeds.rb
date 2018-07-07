@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+departamentos = Departamento.create([
+    { nombre: 'Beni' },
+    { nombre: 'Chuquisaca' },
+    { nombre: 'Cochabamba' },
+    { nombre: 'La Paz' },
+    { nombre: 'Oruro' },
+    { nombre: 'Pando' },
+    { nombre: 'Potosí' },
+    { nombre: 'Santa Cruz' },
+    { nombre: 'Tarija' },
+  ])
