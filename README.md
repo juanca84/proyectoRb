@@ -57,3 +57,48 @@ La aplicación será lanzada en la siguiente dirección http://localhost:3000
 ```sh
 rails s
 ```
+
+## REST 1
+- http://localhost:3000/agencias
+
+respuesta:
+```javascript
+[
+{
+"agencia": "Vino Tinto",
+"departamento": "La Paz"
+},
+{
+"agencia": "San Miguel",
+"departamento": "La Paz"
+},
+{
+"agencia": "Cementerio",
+"departamento": "La Paz"
+},
+{
+"agencia": "Camacho",
+"departamento": "La Paz"
+},
+{
+"agencia": "Cala Cala",
+"departamento": "Cochabamba"
+},
+{
+"agencia": "Casco Viejo",
+"departamento": "Cochabamba"
+},
+{
+"agencia": "Segundo Anillo",
+"departamento": "Santa Cruz"
+},
+{
+"agencia": "Jardin Botanico",
+"departamento": "Santa Cruz"
+},
+{
+"agencia": "Aeropuerto",
+"departamento": "Santa Cruz"
+}
+]
+```
