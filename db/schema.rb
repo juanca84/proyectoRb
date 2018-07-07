@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_06_235648) do
+ActiveRecord::Schema.define(version: 2018_07_07_024010) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,11 +24,35 @@ ActiveRecord::Schema.define(version: 2018_07_06_235648) do
     t.index ["departamento_id"], name: "index_agencias_on_departamento_id"
   end
 
+  create_table "cargos", force: :cascade do |t|
+    t.string "nombre"
+    t.decimal "pago_hora"
+    t.decimal "horas_dia"
+    t.integer "numero_dias"
+    t.bigint "departamento_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["departamento_id"], name: "index_cargos_on_departamento_id"
+  end
+
   create_table "departamentos", force: :cascade do |t|
     t.string "nombre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "personal", force: :cascade do |t|
+    t.string "nombre"
+    t.bigint "agencia_id"
+    t.bigint "cargo_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["agencia_id"], name: "index_personal_on_agencia_id"
+    t.index ["cargo_id"], name: "index_personal_on_cargo_id"
+  end
+
   add_foreign_key "agencias", "departamentos"
+  add_foreign_key "cargos", "departamentos"
+  add_foreign_key "personal", "agencias"
+  add_foreign_key "personal", "cargos"
 end
